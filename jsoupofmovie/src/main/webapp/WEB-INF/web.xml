@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         id="WebApp_ID" version="3.1">
+
+  <display-name>Archetype Created Web Application</display-name>
+  
+  <filter>
+    <filter-name>CharacterFilter</filter-name>
+    <filter-class>com.jsoup.filter.CharacterFilter</filter-class>
+    <init-param>
+      <param-name>encoding</param-name>
+      <param-value>utf-8</param-value>
+    </init-param>
+  </filter>
+  <filter-mapping>
+    <filter-name>CharacterFilter</filter-name>
+    <url-pattern>/*</url-pattern>
+  </filter-mapping>
+  
+  <servlet>
+    <servlet-name>MovieServlet</servlet-name>
+    <servlet-class>com.jsoup.servlet.MovieServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>MovieServlet</servlet-name>
+    <url-pattern>/MovieServlet</url-pattern>
+  </servlet-mapping>
+</web-app>

@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="jsoupofmovie:war">
+    <output-path>$PROJECT_DIR$/jsoupofmovie/target</output-path>
+    <root id="archive" name="jsoupofmovie.war">
+      <element id="artifact" artifact-name="jsoupofmovie:war exploded" />
+    </root>
+  </artifact>
+</component>
