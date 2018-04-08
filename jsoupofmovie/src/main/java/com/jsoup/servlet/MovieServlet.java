@@ -29,11 +29,6 @@ public class MovieServlet extends HttpServlet {
         listMovie = extractMovie.extractFilm(id,title,member);
 
 
-
-
-
-
-
         HttpSession session = request.getSession();
         session.setAttribute("listMovie",listMovie);
         response.sendRedirect("checkList.jsp");
